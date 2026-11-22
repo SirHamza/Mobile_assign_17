@@ -1,0 +1,32 @@
+// =====================================================
+// Assignment # 3 - VARIABLES FOR NUMBERS (JavaScript)
+// Put this code inside <script> ... </script> in an HTML file
+// =====================================================
+
+
+// ---------- Question 1 ----------
+// Declare age and show in alert box
+var age = 14;
+alert("I am " + age + " years old");
+
+
+// ---------- Question 2 ----------
+// Number of visits of a visitor
+var visits = 21;
+alert("You have visited this site " + visits + " times");
+
+
+// ---------- Question 3 ----------
+// Birth year and its data type
+var birthYear = 1990;
+document.write("My birth year is " + birthYear + "<br>");
+document.write("Data type of my declared variable is " + typeof birthYear + "<br><br>");
+
+
+// ---------- Question 4 ----------
+// Online clothing store order
+var visitorName = "Sami Khan";
+var productTitle = "T-Shirt";
+var quantity = 3;
+
+document.write(visitorName + " ordered " + quantity + " " + productTitle + "(s) on XYZ Clothing store");

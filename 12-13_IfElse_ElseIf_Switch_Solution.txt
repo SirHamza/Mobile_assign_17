@@ -1,0 +1,288 @@
+// =====================================================
+// Assignment # 12-13 - IF...ELSE & ELSE IF STATEMENTS,
+// TESTING SET OF CONDITIONS & SWITCH STATEMENTS (JavaScript)
+// Put this code inside <script> ... </script> in an HTML file
+// =====================================================
+
+
+// ---------- Question 1 ----------
+// Divisible by 3 or not
+var num1 = parseInt(prompt("Enter a number"));
+if (num1 % 3 === 0) {
+    alert("Number is divisible by 3");
+} else {
+    alert("Number is not divisible by 3");
+}
+
+
+// ---------- Question 2 ----------
+// Even or odd
+var num2 = parseInt(prompt("Enter a number"));
+if (num2 % 2 === 0) {
+    alert(num2 + " is an even number");
+} else {
+    alert(num2 + " is an odd number");
+}
+
+
+// ---------- Question 3 ----------
+// Old enough or too young
+var age = 20;
+if (age > 18) {
+    alert("Old enough");
+} else {
+    alert("Too young");
+}
+
+
+// ---------- Question 4 ----------
+// Special greeting only if name is same as mine
+var myName = "Ali";
+var userName = prompt("Enter your name");
+if (userName === myName) {
+    alert("Welcome " + userName + "! We have the same name.");
+}
+
+
+// ---------- Question 5 ----------
+// Divisible by 3 using switch
+var num5 = parseInt(prompt("Enter a number"));
+switch (num5 % 3) {
+    case 0:
+        alert("Number is divisible by 3");
+        break;
+    default:
+        alert("Number is not divisible by 3");
+}
+
+
+// ---------- Question 6 ----------
+// Number, uppercase or lowercase (using ASCII codes)
+var ch = prompt("Enter a single character");
+var code = ch.charCodeAt(0);
+
+if (code >= 48 && code <= 57) {
+    alert(ch + " is a number");
+} else if (code >= 65 && code <= 90) {
+    alert(ch + " is an uppercase letter");
+} else if (code >= 97 && code <= 122) {
+    alert(ch + " is a lowercase letter");
+} else {
+    alert(ch + " is a special character");
+}
+
+
+// ---------- Question 7 ----------
+// Calculator using switch
+var number1 = parseFloat(prompt("Enter first number"));
+var number2 = parseFloat(prompt("Enter second number"));
+var operator = prompt("Enter operator (+, -, *, /, %)");
+
+switch (operator) {
+    case "+":
+        alert("Result: " + (number1 + number2));
+        break;
+    case "-":
+        alert("Result: " + (number1 - number2));
+        break;
+    case "*":
+        alert("Result: " + (number1 * number2));
+        break;
+    case "/":
+        alert("Result: " + (number1 / number2));
+        break;
+    case "%":
+        alert("Result: " + (number1 % number2));
+        break;
+    default:
+        alert("Invalid operator");
+}
+
+
+// ---------- Question 8 ----------
+// Greeting according to 24 hour time
+var time = parseInt(prompt("Enter time in 24 hours format (e.g. 1900)"));
+
+if (time >= 0 && time < 1200) {
+    alert("Good morning!");
+} else if (time >= 1200 && time < 1700) {
+    alert("Good afternoon!");
+} else if (time >= 1700 && time < 2100) {
+    alert("Good evening!");
+} else if (time >= 2100 && time <= 2359) {
+    alert("Good night!");
+} else {
+    alert("Invalid time");
+}
+
+
+// ---------- Question 9 ----------
+// Leap year
+var year = 2024;
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    alert(year + " is a leap year");
+} else {
+    alert(year + " is not a leap year");
+}
+
+
+// ---------- Question 10 ----------
+// Password validation
+var correctPassword = "abc123";
+var userPassword = prompt("Enter your password");
+
+if (userPassword === "" || userPassword === null) {
+    alert("Please enter your password");
+} else if (userPassword === correctPassword) {
+    alert("Correct! The password you entered matches the original password");
+} else {
+    alert("Incorrect password");
+}
+
+
+// ---------- Question 11 ----------
+// Add else statement
+var firstName = "Ali";
+if (firstName === "Fahad") {
+    document.write("Hello Fahad!");
+} else {
+    document.write("You are not Fahad<br>");
+}
+
+
+// ---------- Question 12 ----------
+// Fixed if/else statement
+var greeting;
+var hour = 13;
+if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+document.write(greeting + "<br>");
+
+
+// ---------- Question 13 ----------
+// Larger of two integers
+var int1 = parseInt(prompt("Enter first integer"));
+var int2 = parseInt(prompt("Enter second integer"));
+
+if (int1 > int2) {
+    alert(int1 + " is larger");
+} else if (int2 > int1) {
+    alert(int2 + " is larger");
+} else {
+    alert("Both integers are equal");
+}
+
+
+// ---------- Question 14 ----------
+// Positive, negative or zero
+var num14 = parseInt(prompt("Enter a number"));
+if (num14 > 0) {
+    alert("The number is positive");
+} else if (num14 < 0) {
+    alert("The number is negative");
+} else {
+    alert("The number is zero");
+}
+
+
+// ---------- Question 15 ----------
+// Meal time (24 hour format)
+var currentHour = parseInt(prompt("What is the current hour? (0 - 23)"));
+
+if (currentHour >= 6 && currentHour <= 9) {
+    alert("Breakfast is served.");
+} else if (currentHour >= 11 && currentHour <= 13) {
+    alert("Time for lunch.");
+} else if (currentHour >= 17 && currentHour <= 20) {
+    alert("It's dinner time.");
+} else {
+    alert("Sorry, you'll have to wait, or go get a snack.");
+}
+
+
+// ---------- Question 16 ----------
+// Type of variable
+var value = "Hello";
+
+if (typeof value === "number") {
+    alert("The type of variable is number");
+} else if (typeof value === "string") {
+    alert("The type of variable is string");
+} else if (typeof value === "boolean") {
+    alert("The type of variable is boolean");
+} else if (typeof value === "undefined") {
+    alert("The type of variable is undefined");
+}
+
+
+// ---------- Question 17 ----------
+// Vowel or not
+var letter = prompt("Enter a single character");
+var isVowel = false;
+
+if (letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u" ||
+    letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U") {
+    isVowel = true;
+}
+alert(isVowel);
+
+
+// ---------- Question 18 ----------
+// 10 is NOT equal to 8  -> use != (or !==)
+alert(10 != 8);
+
+
+// ---------- Question 19 ----------
+// Month name using switch
+var month = parseInt(prompt("Enter month number (1 - 12)"));
+
+switch (month) {
+    case 1:
+        alert("January");
+        break;
+    case 2:
+        alert("February");
+        break;
+    case 3:
+        alert("March");
+        break;
+    case 4:
+        alert("April");
+        break;
+    case 5:
+        alert("May");
+        break;
+    case 6:
+        alert("June");
+        break;
+    case 7:
+        alert("July");
+        break;
+    case 8:
+        alert("August");
+        break;
+    case 9:
+        alert("September");
+        break;
+    case 10:
+        alert("October");
+        break;
+    case 11:
+        alert("November");
+        break;
+    case 12:
+        alert("December");
+        break;
+    default:
+        alert("Invalid month");
+}
+
+
+// ---------- Question 20 ----------
+// Ternary operator
+var personAge = 16;
+var voteable = (personAge < 18) ? "Too young" : "Old enough";
+alert(voteable);

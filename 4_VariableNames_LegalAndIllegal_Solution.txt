@@ -1,0 +1,34 @@
+// =====================================================
+// Assignment # 4 - VARIABLE NAMES: LEGAL & ILLEGAL (JavaScript)
+// Put this code inside <script> ... </script> in an HTML file
+// =====================================================
+
+
+// ---------- Question 1 ----------
+// Declare 3 variables in one statement
+var firstName = "Ali", lastName = "Khan", age = 20;
+
+
+// ---------- Question 2 ----------
+// 5 Legal variable names
+var studentName = "Ali";
+var _city = "Karachi";
+var $price = 500;
+var marks1 = 85;
+var my_age = 20;
+
+// 5 Illegal variable names (written as comments because they give error)
+// var 1name = "Ali";         -> cannot start with a number
+// var student-name = "Ali";  -> hyphen (-) is not allowed
+// var my name = "Ali";       -> space is not allowed
+// var var = 10;              -> "var" is a JS keyword
+// var @email = "a@b.com";    -> @ symbol is not allowed
+
+
+// ---------- Question 3 ----------
+// Display rules in browser
+document.write("<h1>Rules for naming JS variables</h1>");
+document.write("Variable names can only contain letters, numbers, $ and _. For example $my_1stVariable<br>");
+document.write("Variables must begin with a letter, $ or _. For example $name, _name or name<br>");
+document.write("Variable names are case sensitive<br>");
+document.write("Variable names should not be JS keywords<br>");

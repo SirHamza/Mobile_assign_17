@@ -1,0 +1,79 @@
+// =====================================================
+// Assignment # 2 - VARIABLES FOR STRINGS (JavaScript)
+// Put this code inside <script> ... </script> in an HTML file
+// =====================================================
+
+
+// ---------- Question 1 ----------
+// Declare a variable called username
+var username;
+
+
+// ---------- Question 2 ----------
+// Declare a variable called myName & assign your full name
+var myName = "Ali Khan";
+
+
+// ---------- Question 3 ----------
+// a. declare a variable titled message
+var message;
+
+// b. assign "Hello World" to message
+message = "Hello World";
+
+// c. display the message in alert box
+alert(message);
+
+
+// ---------- Question 4 ----------
+// Save student's bio data in variables and show in alert boxes
+var studentName = "Ali Khan";
+var studentAge = "17 years old";
+var studentInstitute = "SSUET";
+var studentCourse = "Mobile & Cloud Computing - Module A";
+
+alert(studentName);
+alert(studentAge);
+alert(studentInstitute);
+alert(studentCourse);
+
+
+// ---------- Question 5 ----------
+// Display PIZZA, PIZZ, PIZ, PI, P using one variable
+var food = "PIZZA\nPIZZ\nPIZ\nPI\nP";
+alert(food);
+
+
+// ---------- Question 6 ----------
+// Fortune Teller
+var numberOfChildren = 2;
+var partnerName = "ABC";
+var geoLocation = "USA";
+var jobTitle = "Software Developer";
+
+alert("You will be a " + jobTitle + " in " + geoLocation + ", and married to " + partnerName + " with " + numberOfChildren + " kids.");
+
+
+// ---------- Question 7 ----------
+// Email address with string concatenation
+var email = "abc@xyz.com";
+alert("My email address is " + email);
+
+
+// ---------- Question 8 ----------
+// Book name
+var book = "A smarter way to learn JavaScript";
+alert("I am trying to learn from the book '" + book + "'");
+
+
+// ---------- Question 9 ----------
+// Use variables of exercise 4 and give meaning to data
+alert("My name is " + studentName);
+alert("I am " + studentAge);
+alert("I study in " + studentInstitute);
+alert("I take " + studentCourse + " classes");
+
+
+// ---------- Question 10 ----------
+// Display text in browser through JS
+document.write("Yay! I can write HTML content through Javascript");
